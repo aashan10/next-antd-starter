@@ -1,0 +1,72 @@
+@import '~antd/dist/antd';
+
+@primary-color: #98b0f4;
+@white: #fff;
+@layout-header-background: #fff;
+
+.ant-layout-header {
+  .brand-name {
+    span {
+      color: @primary-color;
+      font-weight: 100;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-family: 'Pacifico', cursive;
+    }
+  }
+}
+
+
+.mega-menu {
+  padding: @layout-header-padding;
+}
+
+
+// Filter
+.ant-card {
+  border-radius: 10px;
+  overflow: hidden;
+
+  .ant-card-body {
+    .ant-collapse {
+      border: 0;
+
+      .ant-collapse-item {
+        border: 0;
+
+        .ant-collapse-header {
+          border: 0;
+          background: @white;
+        }
+
+        .ant-collapse-content {
+          border: 0;
+
+          .swatch-buttons {
+            .ant-space-item {
+              .ant-btn {
+                border: 0;
+                border-radius: 50px;
+              }
+            }
+          }
+
+          .ant-slider {
+            .ant-slider-track {
+              background-color: @primary-color;
+            }
+
+            &:hover {
+              .ant-slider-track {
+                background-color: @primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
